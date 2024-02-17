@@ -20,10 +20,10 @@ The payload parameter can be a:
 - File path - If it is the path of a file in the system, we take the bytes from it.
   - Example: "C:\Windows\System32\calc.exe"
 - URL to download a file - If it starts with "http" we download the file and take the bytes from it.
-  - Example: "http://127.0.0.1/test.txt"
+  - Example: "http:/<span>/127.0.0.1/test.txt"
 - String - If no other payload type applies, we take the bytes from the string.
 
-The result is a variable containing the obfuscated strings and the bytes decoded from it (the project contains both the obfuscation and deobfuscation functions).
+The result is a variable containing the obfuscated strings and the bytes decoded from that list.
 
 ---------------------------------------------------------
 
