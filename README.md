@@ -16,12 +16,14 @@ There are 4 possible values for the option parameter:
 
 The payload parameter can be a: 
 - Hexadecimal value - If it starts with "0x" or "\x" we take the bytes from the string.
-  -  Examples: "0xFC4883E4F0E8C00000004151415052", "\xFC\x48\x83\xE4\xF0\xE8\xC0\x00\x00\x00\x41\x51\x41\x50\x52"
+  -  Examples: "0xFC4883", "\xFC\x48\x83"
 - File path - If it is the path of a file in the system, we take the bytes from it.
   - Example: "C:\Windows\System32\calc.exe"
 - URL to download a file - If it starts with "http" we download the file and take the bytes from it.
   - Example: "http://127.0.0.1/test.txt"
 - String - If no other payload type applies, we take the bytes from the string.
+
+The result is a variable containing the obfuscated strings and the bytes decoded from it (the project contains both the obfuscation and deobfuscation functions).
 
 ---------------------------------------------------------
 
